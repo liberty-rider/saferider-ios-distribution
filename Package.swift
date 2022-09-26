@@ -18,6 +18,13 @@ let package = Package(
             targets: [moduleName]
         )
     ],
+    dependencies: [
+        .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", .upToNextMinor(from: "1.9.0")),
+        .package(url: "https://github.com/Swinject/Swinject.git", .upToNextMinor(from: "2.8.0")),
+        .package(url: "https://github.com/Jounce/Surge", .upToNextMajor(from: "2.0.0")),
+        .package(url: "https://github.com/CombineCommunity/CombineExt.git", .upToNextMinor(from: "1.8.0")),
+        .package(url: "https://github.com/1024jp/GzipSwift.git", .upToNextMinor(from: "5.2.0"))
+    ],
     targets: [
         .binaryTarget(
             name: moduleName,
