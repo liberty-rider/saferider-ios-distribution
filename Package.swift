@@ -15,10 +15,21 @@ let package = Package(
     products: [
         .library(
             name: moduleName,
-            targets: [moduleName]
+            targets: [moduleName, "SafeRiderDependencies"]
         )
     ],
+    dependencies: [
+        // Dependencies declare other packages that this package depends on.
+        .package(url: "https://github.com/attaswift/BigInt.git", .upToNextMinor(from: "5.3.0"))
+    ],
+
     targets: [
+        .target(
+            name: "SafeRiderDependencies",
+            dependencies: [
+                .product(name: "BigInt", package: "BigInt")
+            ],
+            path: "SafeRiderDependencies"),
         .binaryTarget(
             name: moduleName,
             url: "https://github.com/liberty-rider/saferider-ios-distribution/releases/download/\(version)/\(moduleName).zip",
