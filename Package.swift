@@ -23,17 +23,17 @@ let package = Package(
         .package(url: "https://github.com/attaswift/BigInt.git", .upToNextMinor(from: "5.3.0"))
     ],
     targets: [
+        .binaryTarget(
+            name: moduleName,
+            url: "https://github.com/liberty-rider/saferider-ios-distribution/releases/download/\(version)/\(moduleName).zip",
+            checksum: checksum
+        )
         .target(
             name: "SafeRiderWrapper",
             dependencies: [
                 .target(name: moduleName),
                 .product(name: "BigInt", package: "BigInt")
             ],
-            path: "SafeRiderWrapper"),
-        .binaryTarget(
-            name: moduleName,
-            url: "https://github.com/liberty-rider/saferider-ios-distribution/releases/download/\(version)/\(moduleName).zip",
-            checksum: checksum
-        )
+            path: "Sources")
     ]
 )
