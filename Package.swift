@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "0.6.3"
+let version = "0.6.2"
 let moduleName = "SafeRider"
 let checksum = "d036ec324dbeff1e91a8115957310af69c5b9db3d9ec93fa191277d2bba652f3"
 
@@ -15,7 +15,7 @@ let package = Package(
     products: [
         .library(
             name: moduleName,
-            targets: ["SafeRiderWrapper"]
+            targets: [moduleName, "SafeRiderWrapper"]
         )
     ],
     dependencies: [
@@ -31,7 +31,6 @@ let package = Package(
         .target(
             name: "SafeRiderWrapper",
             dependencies: [
-                .target(name: moduleName),
                 .product(name: "BigInt", package: "BigInt")
             ],
             path: "Sources")
