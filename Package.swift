@@ -22,7 +22,6 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/attaswift/BigInt.git", .upToNextMinor(from: "5.3.0"))
     ],
-
     targets: [
         .target(
             name: "SafeRiderDependencies",
