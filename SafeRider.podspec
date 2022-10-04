@@ -11,10 +11,8 @@ Pod::Spec.new do |s|
         :text => 'Copyright 2022 Liberty Rider'
     }
     s.authors      = { "Liberty Rider" => "contact@liberty-rider.com" }
-    s.source       = { 
-        :git => "https://github.com/liberty-rider/saferider-ios-distribution.git", 
-        :tag => "#{s.version}" 
-    }
+    #s.source       = { :git => "https://github.com/liberty-rider/saferider-ios-distribution.git", :tag => "#{s.version}" }
+    s.source       = { :http => "https://github.com/liberty-rider/saferider-ios-distribution/releases/download/#{s.version}/#{s.name}.zip" }
 
     s.vendored_frameworks = "SafeRider.zip"
     s.platform = :ios
