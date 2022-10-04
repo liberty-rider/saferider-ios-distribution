@@ -1,0 +1,571 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 effective-4.1.50 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name Surge
+import Accelerate
+import Swift
+import _Concurrency
+public func add<L>(_ lhs: L, _ rhs: Swift.Float) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func add<L>(_ lhs: L, _ rhs: Swift.Double) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func + <L>(lhs: L, rhs: Swift.Float) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func + <L>(lhs: L, rhs: Swift.Double) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func += <L>(lhs: inout L, rhs: Swift.Float) where L : Surge.UnsafeMutableMemoryAccessible, L.Element == Swift.Float
+public func += <L>(lhs: inout L, rhs: Swift.Double) where L : Surge.UnsafeMutableMemoryAccessible, L.Element == Swift.Double
+public func add<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func add<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func .+ <L, R>(lhs: L, rhs: R) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func .+ <L, R>(lhs: L, rhs: R) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func .+= <L, R>(lhs: inout L, rhs: R) where L : Surge.UnsafeMutableMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func .+= <L, R>(lhs: inout L, rhs: R) where L : Surge.UnsafeMutableMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func sub<L>(_ lhs: L, _ rhs: Swift.Float) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func sub<L>(_ lhs: L, _ rhs: Swift.Double) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func - <L>(lhs: L, rhs: Swift.Float) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func - <L>(lhs: L, rhs: Swift.Double) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func -= <L>(lhs: inout L, rhs: Swift.Float) where L : Surge.UnsafeMutableMemoryAccessible, L.Element == Swift.Float
+public func -= <L>(lhs: inout L, rhs: Swift.Double) where L : Surge.UnsafeMutableMemoryAccessible, L.Element == Swift.Double
+public func sub<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func sub<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func .- <L, R>(lhs: L, rhs: R) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func .- <L, R>(lhs: L, rhs: R) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func .-= <L, R>(lhs: inout L, rhs: R) where L : Surge.UnsafeMutableMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func .-= <L, R>(lhs: inout L, rhs: R) where L : Surge.UnsafeMutableMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func mul<L>(_ lhs: L, _ rhs: Swift.Float) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func mul<L>(_ lhs: L, _ rhs: Swift.Double) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func * <L>(lhs: L, rhs: Swift.Float) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func * <L>(lhs: L, rhs: Swift.Double) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func *= <L>(lhs: inout L, rhs: Swift.Float) where L : Surge.UnsafeMutableMemoryAccessible, L.Element == Swift.Float
+public func *= <L>(lhs: inout L, rhs: Swift.Double) where L : Surge.UnsafeMutableMemoryAccessible, L.Element == Swift.Double
+public func elmul<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func elmul<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func .* <L, R>(lhs: L, rhs: R) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func .* <L, R>(lhs: L, rhs: R) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func .*= <L, R>(lhs: inout L, rhs: R) where L : Surge.UnsafeMutableMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func .*= <L, R>(lhs: inout L, rhs: R) where L : Surge.UnsafeMutableMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func div<L>(_ lhs: L, _ rhs: Swift.Float) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func div<L>(_ lhs: L, _ rhs: Swift.Double) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func / <L>(lhs: L, rhs: Swift.Float) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func / <L>(lhs: L, rhs: Swift.Double) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func /= <L>(lhs: inout L, rhs: Swift.Float) where L : Surge.UnsafeMutableMemoryAccessible, L.Element == Swift.Float
+public func /= <L>(lhs: inout L, rhs: Swift.Double) where L : Surge.UnsafeMutableMemoryAccessible, L.Element == Swift.Double
+public func div<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func div<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func ./ <L, R>(lhs: L, rhs: R) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func ./ <L, R>(lhs: L, rhs: R) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func ./= <L, R>(lhs: inout L, rhs: R) where L : Surge.UnsafeMutableMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func ./= <L, R>(lhs: inout L, rhs: R) where L : Surge.UnsafeMutableMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func mod<L>(_ lhs: L, _ rhs: Swift.Float) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func mod<L>(_ lhs: L, _ rhs: Swift.Double) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func % <L>(lhs: L, rhs: Swift.Float) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func % <L>(lhs: L, rhs: Swift.Double) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func .%= <L>(lhs: inout L, rhs: Swift.Float) where L : Surge.UnsafeMutableMemoryAccessible, L.Element == Swift.Float
+public func .%= <L>(lhs: inout L, rhs: Swift.Double) where L : Surge.UnsafeMutableMemoryAccessible, L.Element == Swift.Double
+public func mod<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func mod<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func .% <L, R>(lhs: L, rhs: R) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func .% <L, R>(lhs: L, rhs: R) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func .%= <L, R>(lhs: inout L, rhs: R) where L : Surge.UnsafeMutableMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func .%= <L, R>(lhs: inout L, rhs: R) where L : Surge.UnsafeMutableMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func remainder<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func remainder<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func exp<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func exp<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func exp2<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func exp2<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func pow<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func pow<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func pow<L>(_ lhs: L, _ rhs: Swift.Float) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func pow<L>(_ lhs: L, _ rhs: Swift.Double) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func ** <L>(lhs: L, rhs: Swift.Float) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func ** <L>(lhs: L, rhs: Swift.Double) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func .** <L, R>(lhs: L, rhs: R) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func .** <L, R>(lhs: L, rhs: R) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func **= <L>(lhs: inout L, rhs: Swift.Float) where L : Surge.UnsafeMutableMemoryAccessible, L.Element == Swift.Float
+public func **= <L>(lhs: inout L, rhs: Swift.Double) where L : Surge.UnsafeMutableMemoryAccessible, L.Element == Swift.Double
+public func .**= <L, R>(lhs: inout L, rhs: R) where L : Surge.UnsafeMutableMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func .**= <L, R>(lhs: inout L, rhs: R) where L : Surge.UnsafeMutableMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func sq<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func sq<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func sqrt<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func sqrt<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func sqrt<MI, MO>(_ lhs: MI, into results: inout MO) where MI : Surge.UnsafeMemoryAccessible, MO : Surge.UnsafeMutableMemoryAccessible, MI.Element == Swift.Float, MO.Element == Swift.Float
+public func sqrt<MI, MO>(_ lhs: MI, into results: inout MO) where MI : Surge.UnsafeMemoryAccessible, MO : Surge.UnsafeMutableMemoryAccessible, MI.Element == Swift.Double, MO.Element == Swift.Double
+public func dot<L, R>(_ lhs: L, _ rhs: R) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func dot<L, R>(_ lhs: L, _ rhs: R) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+infix operator • : MultiplicationPrecedence
+public func • <L, R>(lhs: L, rhs: R) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func • <L, R>(lhs: L, rhs: R) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func dist<L, R>(_ lhs: L, _ rhs: R) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func dist<L, R>(_ lhs: L, _ rhs: R) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func distSq<L, R>(_ lhs: L, _ rhs: R) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func distSq<L, R>(_ lhs: L, _ rhs: R) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func abs<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func abs<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func floor<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func floor<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func ceil<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func ceil<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func clip<L>(_ lhs: L, low: Swift.Float, high: Swift.Float) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func clip<L>(_ lhs: L, low: Swift.Double, high: Swift.Double) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func copysign<S, M>(sign: S, magnitude: M) -> [Swift.Float] where S : Surge.UnsafeMemoryAccessible, M : Surge.UnsafeMemoryAccessible, S.Element == Swift.Float, M.Element == Swift.Float
+public func copysign<S, M>(sign: S, magnitude: M) -> [Swift.Double] where S : Surge.UnsafeMemoryAccessible, M : Surge.UnsafeMemoryAccessible, S.Element == Swift.Double, M.Element == Swift.Double
+public func neg<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func neg<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func rec<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func rec<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func round<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func round<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func threshold<L>(_ lhs: L, low: Swift.Float) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func threshold<L>(_ lhs: L, low: Swift.Double) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func trunc<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func trunc<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func conv<L, K>(_ lhs: L, _ k: K) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, K : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, K.Element == Swift.Float
+public func conv<L, K>(_ lhs: L, _ k: K) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, K : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, K.Element == Swift.Double
+public func xcorr<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func xcorr<L, R>(_ lhs: L, _ rhs: R) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func xcorr<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func xcorr<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func fft(_ input: [Swift.Float]) -> [Swift.Float]
+public func fft(_ input: [Swift.Double]) -> [Swift.Double]
+public enum MatrixAxies {
+  case row
+  case column
+  public static func == (a: Surge.MatrixAxies, b: Surge.MatrixAxies) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Matrix<Scalar> where Scalar : Swift.ExpressibleByFloatLiteral, Scalar : Swift.FloatingPoint {
+  public enum Shape : Swift.Equatable {
+    case wide
+    case tall
+    case square
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: Surge.Matrix<Scalar>.Shape, b: Surge.Matrix<Scalar>.Shape) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public let rows: Swift.Int
+  public let columns: Swift.Int
+  public var shape: Surge.Matrix<Scalar>.Shape {
+    get
+  }
+  public init(rows: Swift.Int, columns: Swift.Int, repeatedValue: Scalar)
+  public init<T, U>(_ contents: T) where Scalar == U.Element, T : Swift.Collection, U : Swift.Collection, U == T.Element
+  public init(row: [Scalar])
+  public init(column: [Scalar])
+  public init(rows: Swift.Int, columns: Swift.Int, grid: [Scalar])
+  public init(rows: Swift.Int, columns: Swift.Int, _ closure: (_ row: Swift.Int, _ column: Swift.Int) throws -> Scalar) rethrows
+  public static func identity(size: Swift.Int) -> Surge.Matrix<Scalar>
+  public static func eye(rows: Swift.Int, columns: Swift.Int) -> Surge.Matrix<Scalar>
+  public static func diagonal(rows: Swift.Int, columns: Swift.Int, repeatedValue: Scalar) -> Surge.Matrix<Scalar>
+  public static func diagonal<T>(rows: Swift.Int, columns: Swift.Int, scalars: T) -> Surge.Matrix<Scalar> where Scalar == T.Element, T : Swift.Collection
+}
+extension Surge.Matrix where Scalar == Swift.Float {
+  public static func random(rows: Swift.Int, columns: Swift.Int, in range: Swift.ClosedRange<Swift.Float> = 0.0...1.0) -> Surge.Matrix<Scalar>
+  public static func random<T>(rows: Swift.Int, columns: Swift.Int, in range: Swift.ClosedRange<Swift.Float> = 0.0...1.0, using generator: inout T) -> Surge.Matrix<Scalar> where T : Swift.RandomNumberGenerator
+  public static func randomNormal(rows: Swift.Int, columns: Swift.Int, mean: Swift.Float = 0.0, stdDeviation: Swift.Float = 1.0) -> Surge.Matrix<Scalar>
+  public static func randomNormal<T>(rows: Swift.Int, columns: Swift.Int, mean: Swift.Float = 0.0, stdDeviation: Swift.Float = 1.0, using generator: inout T) -> Surge.Matrix<Scalar> where T : Swift.RandomNumberGenerator
+}
+extension Surge.Matrix where Scalar == Swift.Double {
+  public static func random(rows: Swift.Int, columns: Swift.Int, in range: Swift.ClosedRange<Swift.Double> = 0.0...1.0) -> Surge.Matrix<Scalar>
+  public static func random<T>(rows: Swift.Int, columns: Swift.Int, in range: Swift.ClosedRange<Swift.Double> = 0.0...1.0, using generator: inout T) -> Surge.Matrix<Scalar> where T : Swift.RandomNumberGenerator
+  public static func randomNormal(rows: Swift.Int, columns: Swift.Int, mean: Swift.Double = 0.0, stdDeviation: Swift.Double = 1.0) -> Surge.Matrix<Scalar>
+  public static func randomNormal<T>(rows: Swift.Int, columns: Swift.Int, mean: Swift.Double = 0.0, stdDeviation: Swift.Double = 1.0, using generator: inout T) -> Surge.Matrix<Scalar> where T : Swift.RandomNumberGenerator
+}
+extension Surge.Matrix {
+  public subscript(row: Swift.Int, column: Swift.Int) -> Scalar {
+    get
+    set
+  }
+  public subscript(row row: Swift.Int) -> [Scalar] {
+    get
+    set
+  }
+  public subscript(column column: Swift.Int) -> [Scalar] {
+    get
+    set
+  }
+}
+extension Surge.Matrix : Swift.ExpressibleByArrayLiteral {
+  public init(arrayLiteral elements: [Scalar]...)
+  public typealias ArrayLiteralElement = [Scalar]
+}
+public struct MatrixEigenDecompositionResult<Scalar> where Scalar : Swift.ExpressibleByFloatLiteral, Scalar : Swift.FloatingPoint {
+  public let eigenValues: [(Scalar, Scalar)]
+  public let leftEigenVectors: [[(Scalar, Scalar)]]
+  public let rightEigenVectors: [[(Scalar, Scalar)]]
+  public init(eigenValues: [(Scalar, Scalar)], leftEigenVectors: [[(Scalar, Scalar)]], rightEigenVectors: [[(Scalar, Scalar)]])
+  public init(rowCount: Swift.Int, eigenValueRealParts: [Scalar], eigenValueImaginaryParts: [Scalar], leftEigenVectorWork: [Scalar], rightEigenVectorWork: [Scalar])
+}
+public enum EigenDecompositionError : Swift.Error {
+  case matrixNotSquare
+  case matrixNotDecomposable
+  public static func == (a: Surge.EigenDecompositionError, b: Surge.EigenDecompositionError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Surge.Matrix : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension Surge.Matrix : Swift.Sequence {
+  public func makeIterator() -> Swift.AnyIterator<Swift.ArraySlice<Scalar>>
+}
+extension Surge.Matrix : Swift.Collection {
+  public subscript(row: Swift.Int) -> Swift.ArraySlice<Scalar> {
+    get
+  }
+  public var startIndex: Swift.Int {
+    get
+  }
+  public var endIndex: Swift.Int {
+    get
+  }
+  public func index(after i: Swift.Int) -> Swift.Int
+  public typealias Element = Swift.ArraySlice<Scalar>
+  public typealias Index = Swift.Int
+  public typealias Indices = Swift.DefaultIndices<Surge.Matrix<Scalar>>
+  public typealias Iterator = Swift.AnyIterator<Swift.ArraySlice<Scalar>>
+  public typealias SubSequence = Swift.Slice<Surge.Matrix<Scalar>>
+}
+extension Surge.Matrix : Swift.Equatable {
+}
+public func == <T>(lhs: Surge.Matrix<T>, rhs: Surge.Matrix<T>) -> Swift.Bool where T : Swift.ExpressibleByFloatLiteral, T : Swift.FloatingPoint
+public func add(_ lhs: Surge.Matrix<Swift.Float>, _ rhs: Surge.Matrix<Swift.Float>) -> Surge.Matrix<Swift.Float>
+public func add(_ lhs: Surge.Matrix<Swift.Double>, _ rhs: Surge.Matrix<Swift.Double>) -> Surge.Matrix<Swift.Double>
+public func + (lhs: Surge.Matrix<Swift.Float>, rhs: Surge.Matrix<Swift.Float>) -> Surge.Matrix<Swift.Float>
+public func + (lhs: Surge.Matrix<Swift.Double>, rhs: Surge.Matrix<Swift.Double>) -> Surge.Matrix<Swift.Double>
+public func += (lhs: inout Surge.Matrix<Swift.Float>, rhs: Surge.Matrix<Swift.Float>)
+public func += (lhs: inout Surge.Matrix<Swift.Double>, rhs: Surge.Matrix<Swift.Double>)
+public func sub(_ lhs: Surge.Matrix<Swift.Float>, _ rhs: Surge.Matrix<Swift.Float>) -> Surge.Matrix<Swift.Float>
+public func sub(_ lhs: Surge.Matrix<Swift.Double>, _ rhs: Surge.Matrix<Swift.Double>) -> Surge.Matrix<Swift.Double>
+public func - (lhs: Surge.Matrix<Swift.Float>, rhs: Surge.Matrix<Swift.Float>) -> Surge.Matrix<Swift.Float>
+public func - (lhs: Surge.Matrix<Swift.Double>, rhs: Surge.Matrix<Swift.Double>) -> Surge.Matrix<Swift.Double>
+public func -= (lhs: inout Surge.Matrix<Swift.Float>, rhs: Surge.Matrix<Swift.Float>)
+public func -= (lhs: inout Surge.Matrix<Swift.Double>, rhs: Surge.Matrix<Swift.Double>)
+public func mul(_ lhs: Surge.Matrix<Swift.Float>, _ rhs: Surge.Matrix<Swift.Float>) -> Surge.Matrix<Swift.Float>
+public func mul(_ lhs: Surge.Matrix<Swift.Double>, _ rhs: Surge.Matrix<Swift.Double>) -> Surge.Matrix<Swift.Double>
+public func * (lhs: Surge.Matrix<Swift.Float>, rhs: Surge.Matrix<Swift.Float>) -> Surge.Matrix<Swift.Float>
+public func * (lhs: Surge.Matrix<Swift.Double>, rhs: Surge.Matrix<Swift.Double>) -> Surge.Matrix<Swift.Double>
+public func mul(_ lhs: Surge.Matrix<Swift.Float>, _ rhs: Surge.Vector<Swift.Float>) -> Surge.Vector<Swift.Float>
+public func mul(_ lhs: Surge.Matrix<Swift.Double>, _ rhs: Surge.Vector<Swift.Double>) -> Surge.Vector<Swift.Double>
+public func * (lhs: Surge.Matrix<Swift.Float>, rhs: Surge.Vector<Swift.Float>) -> Surge.Vector<Swift.Float>
+public func * (lhs: Surge.Matrix<Swift.Double>, rhs: Surge.Vector<Swift.Double>) -> Surge.Vector<Swift.Double>
+public func elmul(_ lhs: Surge.Matrix<Swift.Double>, _ rhs: Surge.Matrix<Swift.Double>) -> Surge.Matrix<Swift.Double>
+public func elmul(_ lhs: Surge.Matrix<Swift.Float>, _ rhs: Surge.Matrix<Swift.Float>) -> Surge.Matrix<Swift.Float>
+public func div(_ lhs: Surge.Matrix<Swift.Double>, _ rhs: Surge.Matrix<Swift.Double>) -> Surge.Matrix<Swift.Double>
+public func div(_ lhs: Surge.Matrix<Swift.Float>, _ rhs: Surge.Matrix<Swift.Float>) -> Surge.Matrix<Swift.Float>
+public func / (lhs: Surge.Matrix<Swift.Double>, rhs: Surge.Matrix<Swift.Double>) -> Surge.Matrix<Swift.Double>
+public func / (lhs: Surge.Matrix<Swift.Float>, rhs: Surge.Matrix<Swift.Float>) -> Surge.Matrix<Swift.Float>
+public func div(_ lhs: Surge.Matrix<Swift.Double>, _ rhs: Swift.Double) -> Surge.Matrix<Swift.Double>
+public func div(_ lhs: Surge.Matrix<Swift.Float>, _ rhs: Swift.Float) -> Surge.Matrix<Swift.Float>
+public func / (lhs: Surge.Matrix<Swift.Double>, rhs: Swift.Double) -> Surge.Matrix<Swift.Double>
+public func / (lhs: Surge.Matrix<Swift.Float>, rhs: Swift.Float) -> Surge.Matrix<Swift.Float>
+public func pow(_ lhs: Surge.Matrix<Swift.Double>, _ rhs: Swift.Double) -> Surge.Matrix<Swift.Double>
+public func pow(_ lhs: Surge.Matrix<Swift.Float>, _ rhs: Swift.Float) -> Surge.Matrix<Swift.Float>
+public func exp(_ lhs: Surge.Matrix<Swift.Double>) -> Surge.Matrix<Swift.Double>
+public func exp(_ lhs: Surge.Matrix<Swift.Float>) -> Surge.Matrix<Swift.Float>
+public func sum(_ lhs: Surge.Matrix<Swift.Double>, axies: Surge.MatrixAxies = .column) -> Surge.Matrix<Swift.Double>
+public func sum(_ lhs: Surge.Matrix<Swift.Float>, axies: Surge.MatrixAxies = .column) -> Surge.Matrix<Swift.Float>
+public func inv(_ lhs: Surge.Matrix<Swift.Float>) -> Surge.Matrix<Swift.Float>
+public func inv(_ lhs: Surge.Matrix<Swift.Double>) -> Surge.Matrix<Swift.Double>
+public func transpose(_ lhs: Surge.Matrix<Swift.Float>) -> Surge.Matrix<Swift.Float>
+public func transpose(_ lhs: Surge.Matrix<Swift.Double>) -> Surge.Matrix<Swift.Double>
+postfix public func ′ (value: Surge.Matrix<Swift.Float>) -> Surge.Matrix<Swift.Float>
+postfix public func ′ (value: Surge.Matrix<Swift.Double>) -> Surge.Matrix<Swift.Double>
+public func det(_ lhs: Surge.Matrix<Swift.Float>) -> Swift.Float?
+public func det(_ lhs: Surge.Matrix<Swift.Double>) -> Swift.Double?
+public func eigenDecompose(_ lhs: Surge.Matrix<Swift.Float>) throws -> Surge.MatrixEigenDecompositionResult<Swift.Float>
+public func eigenDecompose(_ lhs: Surge.Matrix<Swift.Double>) throws -> Surge.MatrixEigenDecompositionResult<Swift.Double>
+public func mul<R>(_ lhs: Swift.Float, _ rhs: R) -> [Swift.Float] where R : Surge.UnsafeMemoryAccessible, R.Element == Swift.Float
+public func mul<R>(_ lhs: Swift.Double, _ rhs: R) -> [Swift.Double] where R : Surge.UnsafeMemoryAccessible, R.Element == Swift.Double
+public func * <R>(lhs: Swift.Float, rhs: R) -> [Swift.Float] where R : Surge.UnsafeMemoryAccessible, R.Element == Swift.Float
+public func * <R>(lhs: Swift.Double, rhs: R) -> [Swift.Double] where R : Surge.UnsafeMemoryAccessible, R.Element == Swift.Double
+public func mul(_ lhs: Swift.Float, _ rhs: Surge.Vector<Swift.Float>) -> Surge.Vector<Swift.Float>
+public func mul(_ lhs: Swift.Double, _ rhs: Surge.Vector<Swift.Double>) -> Surge.Vector<Swift.Double>
+public func * (lhs: Swift.Float, rhs: Surge.Vector<Swift.Float>) -> Surge.Vector<Swift.Float>
+public func * (lhs: Swift.Double, rhs: Surge.Vector<Swift.Double>) -> Surge.Vector<Swift.Double>
+public func mul(_ lhs: Swift.Float, _ rhs: Surge.Matrix<Swift.Float>) -> Surge.Matrix<Swift.Float>
+public func mul(_ lhs: Swift.Double, _ rhs: Surge.Matrix<Swift.Double>) -> Surge.Matrix<Swift.Double>
+public func * (lhs: Swift.Float, rhs: Surge.Matrix<Swift.Float>) -> Surge.Matrix<Swift.Float>
+public func * (lhs: Swift.Double, rhs: Surge.Matrix<Swift.Double>) -> Surge.Matrix<Swift.Double>
+extension Swift.Float {
+  public static func randomNormal(mean: Swift.Float = 0.0, stdDeviation: Swift.Float = 1.0) -> Swift.Float
+  public static func randomNormal<T>(mean: Swift.Float = 0.0, stdDeviation: Swift.Float = 1.0, using generator: inout T) -> Swift.Float where T : Swift.RandomNumberGenerator
+}
+extension Swift.Double {
+  public static func randomNormal(mean: Swift.Double = 0.0, stdDeviation: Swift.Double = 1.0) -> Swift.Double
+  public static func randomNormal<T>(mean: Swift.Double = 0.0, stdDeviation: Swift.Double = 1.0, using generator: inout T) -> Swift.Double where T : Swift.RandomNumberGenerator
+}
+public struct Vector<Scalar> where Scalar : Swift.ExpressibleByFloatLiteral, Scalar : Swift.FloatingPoint {
+  public let dimensions: Swift.Int
+  public var scalars: [Scalar] {
+    get
+    set
+  }
+  public init(dimensions: Swift.Int, repeatedValue: Scalar)
+  public init<T>(_ contents: T) where Scalar == T.Element, T : Swift.Sequence
+  public init(scalars: [Scalar])
+  public init(dimensions: Swift.Int, _ closure: (Swift.Int) throws -> Scalar) rethrows
+}
+extension Surge.Vector where Scalar == Swift.Float {
+  public static func random(count: Swift.Int, in range: Swift.ClosedRange<Swift.Float> = 0.0...1.0) -> Surge.Vector<Scalar>
+  public static func random<T>(count: Swift.Int, in range: Swift.ClosedRange<Swift.Float> = 0.0...1.0, using generator: inout T) -> Surge.Vector<Scalar> where T : Swift.RandomNumberGenerator
+  public static func randomNormal(count: Swift.Int, mean: Swift.Float = 0.0, stdDeviation: Swift.Float = 1.0) -> Surge.Vector<Scalar>
+  public static func randomNormal<T>(count: Swift.Int, mean: Swift.Float = 0.0, stdDeviation: Swift.Float = 1.0, using generator: inout T) -> Surge.Vector<Scalar> where T : Swift.RandomNumberGenerator
+}
+extension Surge.Vector where Scalar == Swift.Double {
+  public static func random(count: Swift.Int, in range: Swift.ClosedRange<Swift.Double> = 0.0...1.0) -> Surge.Vector<Scalar>
+  public static func random<T>(count: Swift.Int, in range: Swift.ClosedRange<Swift.Double> = 0.0...1.0, using generator: inout T) -> Surge.Vector<Scalar> where T : Swift.RandomNumberGenerator
+  public static func randomNormal(count: Swift.Int, mean: Swift.Double = 0.0, stdDeviation: Swift.Double = 1.0) -> Surge.Vector<Scalar>
+  public static func randomNormal<T>(count: Swift.Int, mean: Swift.Double = 0.0, stdDeviation: Swift.Double = 1.0, using generator: inout T) -> Surge.Vector<Scalar> where T : Swift.RandomNumberGenerator
+}
+extension Surge.Vector : Swift.ExpressibleByArrayLiteral {
+  public init(arrayLiteral elements: Scalar...)
+  public typealias ArrayLiteralElement = Scalar
+}
+extension Surge.Vector : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension Surge.Vector : Swift.Sequence {
+  public func makeIterator() -> Swift.AnyIterator<Scalar>
+}
+extension Surge.Vector : Swift.Collection {
+  public subscript(dimension: Swift.Int) -> Scalar {
+    get
+    set
+  }
+  public var startIndex: Swift.Int {
+    get
+  }
+  public var endIndex: Swift.Int {
+    get
+  }
+  public func index(after i: Swift.Int) -> Swift.Int
+  public typealias Element = Scalar
+  public typealias Index = Swift.Int
+  public typealias Indices = Swift.DefaultIndices<Surge.Vector<Scalar>>
+  public typealias Iterator = Swift.AnyIterator<Scalar>
+  public typealias SubSequence = Swift.Slice<Surge.Vector<Scalar>>
+}
+extension Surge.Vector : Swift.Equatable {
+}
+public func == <T>(lhs: Surge.Vector<T>, rhs: Surge.Vector<T>) -> Swift.Bool where T : Swift.ExpressibleByFloatLiteral, T : Swift.FloatingPoint
+public func add(_ lhs: Surge.Vector<Swift.Float>, _ rhs: Surge.Vector<Swift.Float>) -> Surge.Vector<Swift.Float>
+public func add(_ lhs: Surge.Vector<Swift.Double>, _ rhs: Surge.Vector<Swift.Double>) -> Surge.Vector<Swift.Double>
+public func + (lhs: Surge.Vector<Swift.Float>, rhs: Surge.Vector<Swift.Float>) -> Surge.Vector<Swift.Float>
+public func + (lhs: Surge.Vector<Swift.Double>, rhs: Surge.Vector<Swift.Double>) -> Surge.Vector<Swift.Double>
+public func add(_ lhs: Surge.Vector<Swift.Float>, _ rhs: Swift.Float) -> Surge.Vector<Swift.Float>
+public func add(_ lhs: Surge.Vector<Swift.Double>, _ rhs: Swift.Double) -> Surge.Vector<Swift.Double>
+public func + (lhs: Surge.Vector<Swift.Float>, rhs: Swift.Float) -> Surge.Vector<Swift.Float>
+public func + (lhs: Surge.Vector<Swift.Double>, rhs: Swift.Double) -> Surge.Vector<Swift.Double>
+public func += (lhs: inout Surge.Vector<Swift.Float>, rhs: Surge.Vector<Swift.Float>)
+public func += (lhs: inout Surge.Vector<Swift.Double>, rhs: Surge.Vector<Swift.Double>)
+public func += (lhs: inout Surge.Vector<Swift.Float>, rhs: Swift.Float)
+public func += (lhs: inout Surge.Vector<Swift.Double>, rhs: Swift.Double)
+public func sub(_ lhs: Surge.Vector<Swift.Float>, _ rhs: Surge.Vector<Swift.Float>) -> Surge.Vector<Swift.Float>
+public func sub(_ lhs: Surge.Vector<Swift.Double>, _ rhs: Surge.Vector<Swift.Double>) -> Surge.Vector<Swift.Double>
+public func - (lhs: Surge.Vector<Swift.Float>, rhs: Surge.Vector<Swift.Float>) -> Surge.Vector<Swift.Float>
+public func - (lhs: Surge.Vector<Swift.Double>, rhs: Surge.Vector<Swift.Double>) -> Surge.Vector<Swift.Double>
+public func sub(_ lhs: Surge.Vector<Swift.Float>, _ rhs: Swift.Float) -> Surge.Vector<Swift.Float>
+public func sub(_ lhs: Surge.Vector<Swift.Double>, _ rhs: Swift.Double) -> Surge.Vector<Swift.Double>
+public func - (lhs: Surge.Vector<Swift.Float>, rhs: Swift.Float) -> Surge.Vector<Swift.Float>
+public func - (lhs: Surge.Vector<Swift.Double>, rhs: Swift.Double) -> Surge.Vector<Swift.Double>
+public func -= (lhs: inout Surge.Vector<Swift.Float>, rhs: Surge.Vector<Swift.Float>)
+public func -= (lhs: inout Surge.Vector<Swift.Double>, rhs: Surge.Vector<Swift.Double>)
+public func -= (lhs: inout Surge.Vector<Swift.Float>, rhs: Swift.Float)
+public func -= (lhs: inout Surge.Vector<Swift.Double>, rhs: Swift.Double)
+public func muladd(_ lhs: Surge.Vector<Swift.Float>, _ rhs: Surge.Vector<Swift.Float>, _ alpha: Swift.Float) -> Surge.Vector<Swift.Float>
+public func muladd(_ lhs: Surge.Vector<Swift.Double>, _ rhs: Surge.Vector<Swift.Double>, _ alpha: Swift.Double) -> Surge.Vector<Swift.Double>
+public func mul(_ lhs: Surge.Vector<Swift.Float>, _ rhs: Swift.Float) -> Surge.Vector<Swift.Float>
+public func mul(_ lhs: Surge.Vector<Swift.Double>, _ rhs: Swift.Double) -> Surge.Vector<Swift.Double>
+public func * (lhs: Surge.Vector<Swift.Float>, rhs: Swift.Float) -> Surge.Vector<Swift.Float>
+public func * (lhs: Surge.Vector<Swift.Double>, rhs: Swift.Double) -> Surge.Vector<Swift.Double>
+public func mul(_ lhs: Surge.Vector<Swift.Float>, _ rhs: Surge.Matrix<Swift.Float>) -> Surge.Vector<Swift.Float>
+public func mul(_ lhs: Surge.Vector<Swift.Double>, _ rhs: Surge.Matrix<Swift.Double>) -> Surge.Vector<Swift.Double>
+public func * (lhs: Surge.Vector<Swift.Float>, rhs: Surge.Matrix<Swift.Float>) -> Surge.Vector<Swift.Float>
+public func * (lhs: Surge.Vector<Swift.Double>, rhs: Surge.Matrix<Swift.Double>) -> Surge.Vector<Swift.Double>
+public func *= (lhs: inout Surge.Vector<Swift.Float>, rhs: Swift.Float)
+public func *= (lhs: inout Surge.Vector<Swift.Double>, rhs: Swift.Double)
+public func div(_ lhs: Surge.Vector<Swift.Float>, _ rhs: Swift.Float) -> Surge.Vector<Swift.Float>
+public func div(_ lhs: Surge.Vector<Swift.Double>, _ rhs: Swift.Double) -> Surge.Vector<Swift.Double>
+public func / (lhs: Surge.Vector<Swift.Double>, rhs: Swift.Double) -> Surge.Vector<Swift.Double>
+public func / (lhs: Surge.Vector<Swift.Float>, rhs: Swift.Float) -> Surge.Vector<Swift.Float>
+public func /= (lhs: inout Surge.Vector<Swift.Float>, rhs: Swift.Float)
+public func /= (lhs: inout Surge.Vector<Swift.Double>, rhs: Swift.Double)
+public func elmul(_ lhs: Surge.Vector<Swift.Double>, _ rhs: Surge.Vector<Swift.Double>) -> Surge.Vector<Swift.Double>
+public func elmul(_ lhs: Surge.Vector<Swift.Float>, _ rhs: Surge.Vector<Swift.Float>) -> Surge.Vector<Swift.Float>
+public func .* (lhs: Surge.Vector<Swift.Float>, rhs: Surge.Vector<Swift.Float>) -> Surge.Vector<Swift.Float>
+public func .* (lhs: Surge.Vector<Swift.Double>, rhs: Surge.Vector<Swift.Double>) -> Surge.Vector<Swift.Double>
+public func .*= (lhs: inout Surge.Vector<Swift.Float>, rhs: Surge.Vector<Swift.Float>)
+public func .*= (lhs: inout Surge.Vector<Swift.Double>, rhs: Surge.Vector<Swift.Double>)
+public func eldiv(_ lhs: Surge.Vector<Swift.Double>, _ rhs: Surge.Vector<Swift.Double>) -> Surge.Vector<Swift.Double>
+public func eldiv(_ lhs: Surge.Vector<Swift.Float>, _ rhs: Surge.Vector<Swift.Float>) -> Surge.Vector<Swift.Float>
+public func ./ (lhs: Surge.Vector<Swift.Double>, rhs: Surge.Vector<Swift.Double>) -> Surge.Vector<Swift.Double>
+public func ./ (lhs: Surge.Vector<Swift.Float>, rhs: Surge.Vector<Swift.Float>) -> Surge.Vector<Swift.Float>
+public func ./= (lhs: inout Surge.Vector<Swift.Double>, rhs: Surge.Vector<Swift.Double>)
+public func ./= (lhs: inout Surge.Vector<Swift.Float>, rhs: Surge.Vector<Swift.Float>)
+public func dot(_ lhs: Surge.Vector<Swift.Double>, _ rhs: Surge.Vector<Swift.Double>) -> Swift.Double
+public func dot(_ lhs: Surge.Vector<Swift.Float>, _ rhs: Surge.Vector<Swift.Float>) -> Swift.Float
+infix operator • : MultiplicationPrecedence
+public func • (lhs: Surge.Vector<Swift.Double>, rhs: Surge.Vector<Swift.Double>) -> Swift.Double
+public func • (lhs: Surge.Vector<Swift.Float>, rhs: Surge.Vector<Swift.Float>) -> Swift.Float
+public func pow(_ lhs: Surge.Vector<Swift.Double>, _ rhs: Swift.Double) -> Surge.Vector<Swift.Double>
+public func pow(_ lhs: Surge.Vector<Swift.Float>, _ rhs: Swift.Float) -> Surge.Vector<Swift.Float>
+public func exp(_ lhs: Surge.Vector<Swift.Double>) -> Surge.Vector<Swift.Double>
+public func exp(_ lhs: Surge.Vector<Swift.Float>) -> Surge.Vector<Swift.Float>
+public func dist(_ lhs: Surge.Vector<Swift.Double>, _ rhs: Surge.Vector<Swift.Double>) -> Swift.Double
+public func dist(_ lhs: Surge.Vector<Swift.Float>, _ rhs: Surge.Vector<Swift.Float>) -> Swift.Float
+public func distSq(_ lhs: Surge.Vector<Swift.Double>, _ rhs: Surge.Vector<Swift.Double>) -> Swift.Double
+public func distSq(_ lhs: Surge.Vector<Swift.Float>, _ rhs: Surge.Vector<Swift.Float>) -> Swift.Float
+public func log<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func log<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func log2<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func log2<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func log10<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func log10<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func logb<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func logb<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func random(count: Swift.Int, in range: Swift.ClosedRange<Swift.Float> = 0.0...1.0) -> [Swift.Float]
+public func random(count: Swift.Int, in range: Swift.ClosedRange<Swift.Double> = 0.0...1.0) -> [Swift.Double]
+public func random<T>(count: Swift.Int, in range: Swift.ClosedRange<Swift.Float>, using generator: inout T) -> [Swift.Float] where T : Swift.RandomNumberGenerator
+public func random<T>(count: Swift.Int, in range: Swift.ClosedRange<Swift.Double>, using generator: inout T) -> [Swift.Double] where T : Swift.RandomNumberGenerator
+public func randomNormal(count: Swift.Int, mean: Swift.Float = 0.0, stdDeviation: Swift.Float = 1.0) -> [Swift.Float]
+public func randomNormal(count: Swift.Int, mean: Swift.Double = 0.0, stdDeviation: Swift.Double = 1.0) -> [Swift.Double]
+public func randomNormal<T>(count: Swift.Int, mean: Swift.Float = 0.0, stdDeviation: Swift.Float = 1.0, using generator: inout T) -> [Swift.Float] where T : Swift.RandomNumberGenerator
+public func randomNormal<T>(count: Swift.Int, mean: Swift.Double = 0.0, stdDeviation: Swift.Double = 1.0, using generator: inout T) -> [Swift.Double] where T : Swift.RandomNumberGenerator
+public func sum<L>(_ lhs: L) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func sum<L>(_ lhs: L) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func asum<L>(_ lhs: L) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func asum<L>(_ lhs: L) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func sumsq<L>(_ lhs: L) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func sumsq<L>(_ lhs: L) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func max<L>(_ lhs: L) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func max<L>(_ lhs: L) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func min<L>(_ lhs: L) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func min<L>(_ lhs: L) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func mean<L>(_ lhs: L) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func mean<L>(_ lhs: L) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func meamg<L>(_ lhs: L) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func meamg<L>(_ lhs: L) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func measq<L>(_ lhs: L) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func measq<L>(_ lhs: L) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func rmsq<L>(_ lhs: L) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func rmsq<L>(_ lhs: L) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func variance<L>(_ lhs: L) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func variance<L>(_ lhs: L) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func variance<L>(_ lhs: L, mean: Swift.Float) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func variance<L>(_ lhs: L, mean: Swift.Double) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func std<L>(_ lhs: L) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func std<L>(_ lhs: L) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func std<L>(_ lhs: L, mean: Swift.Float) -> Swift.Float where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func std<L>(_ lhs: L, mean: Swift.Double) -> Swift.Double where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func linregress<L, R>(_ lhs: L, _ rhs: R) -> (slope: Swift.Float, intercept: Swift.Float) where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float, R.Element == Swift.Float
+public func linregress<L, R>(_ lhs: L, _ rhs: R) -> (slope: Swift.Double, intercept: Swift.Double) where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double, R.Element == Swift.Double
+public func sincos<L>(_ lhs: L) -> (sin: [Swift.Float], cos: [Swift.Float]) where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func sincos<L>(_ lhs: L) -> (sin: [Swift.Double], cos: [Swift.Double]) where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func sin<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func sin<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func cos<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func cos<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func tan<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func tan<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func asin<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func asin<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func acos<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func acos<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func atan<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func atan<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func sinh<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func sinh<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func cosh<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func cosh<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func tanh<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func tanh<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func asinh<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func asinh<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func acosh<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func acosh<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+public func atanh<L>(_ lhs: L) -> [Swift.Float] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Float
+public func atanh<L>(_ lhs: L) -> [Swift.Double] where L : Surge.UnsafeMemoryAccessible, L.Element == Swift.Double
+extension Swift.Array : Surge.UnsafeMemoryAccessible, Surge.UnsafeMutableMemoryAccessible {
+  public func withUnsafeMemory<Result>(_ action: (Surge.UnsafeMemory<Element>) throws -> Result) rethrows -> Result
+  public mutating func withUnsafeMutableMemory<Result>(_ action: (Surge.UnsafeMutableMemory<Element>) throws -> Result) rethrows -> Result
+}
+extension Swift.ArraySlice : Surge.UnsafeMemoryAccessible, Surge.UnsafeMutableMemoryAccessible {
+  public func withUnsafeMemory<Result>(_ action: (Surge.UnsafeMemory<Element>) throws -> Result) rethrows -> Result
+  public mutating func withUnsafeMutableMemory<Result>(_ action: (Surge.UnsafeMutableMemory<Element>) throws -> Result) rethrows -> Result
+}
+infix operator .+ : AdditionPrecedence
+infix operator .+= : AssignmentPrecedence
+infix operator .- : AdditionPrecedence
+infix operator .-= : AssignmentPrecedence
+infix operator .* : MultiplicationPrecedence
+infix operator .*= : AssignmentPrecedence
+infix operator ./ : MultiplicationPrecedence
+infix operator ./= : AssignmentPrecedence
+infix operator .% : MultiplicationPrecedence
+infix operator .%= : AssignmentPrecedence
+infix operator • : MultiplicationPrecedence
+postfix operator ′
+precedencegroup ExponentiationPrecedence {
+  associativity: right
+  higherThan: MultiplicationPrecedence
+}
+infix operator ** : ExponentiationPrecedence
+infix operator **= : AssignmentPrecedence
+infix operator .** : ExponentiationPrecedence
+infix operator .**= : AssignmentPrecedence
+@discardableResult
+public func withUnsafePointers<A, B, Result>(_ a: inout A, _ b: inout B, body: (Swift.UnsafePointer<A>, Swift.UnsafePointer<B>) throws -> Result) rethrows -> Result
+@discardableResult
+public func withUnsafeMutablePointers<A, B, Result>(_ a: inout A, _ b: inout B, body: (Swift.UnsafeMutablePointer<A>, Swift.UnsafeMutablePointer<B>) throws -> Result) rethrows -> Result
+@discardableResult
+public func withUnsafePointers<A, B, C, Result>(_ a: inout A, _ b: inout B, _ c: inout C, body: (Swift.UnsafePointer<A>, Swift.UnsafePointer<B>, Swift.UnsafePointer<C>) throws -> Result) rethrows -> Result
+@discardableResult
+public func withUnsafeMutablePointers<A, B, C, Result>(_ a: inout A, _ b: inout B, _ c: inout C, body: (Swift.UnsafeMutablePointer<A>, Swift.UnsafeMutablePointer<B>, Swift.UnsafeMutablePointer<C>) throws -> Result) rethrows -> Result
+public struct UnsafeMemory<Element> : Swift.Sequence {
+  public var pointer: Swift.UnsafePointer<Element>
+  public var stride: Swift.Int
+  public var count: Swift.Int
+  public init(pointer: Swift.UnsafePointer<Element>, stride: Swift.Int = 1, count: Swift.Int)
+  public func makeIterator() -> Surge.UnsafeMemoryIterator<Element>
+  public typealias Iterator = Surge.UnsafeMemoryIterator<Element>
+}
+public struct UnsafeMemoryIterator<Element> : Swift.IteratorProtocol {
+  public init(_ base: Surge.UnsafeMemory<Element>)
+  public mutating func next() -> Element?
+}
+public protocol UnsafeMemoryAccessible : Swift.Collection {
+  func withUnsafeMemory<Result>(_ body: (Surge.UnsafeMemory<Self.Element>) throws -> Result) rethrows -> Result
+}
+public func withUnsafeMemory<L, Result>(_ lhs: L, _ body: (Surge.UnsafeMemory<L.Element>) throws -> Result) rethrows -> Result where L : Surge.UnsafeMemoryAccessible
+public func withUnsafeMemory<L, R, Result>(_ lhs: L, _ rhs: R, _ body: (Surge.UnsafeMemory<L.Element>, Surge.UnsafeMemory<R.Element>) throws -> Result) rethrows -> Result where L : Surge.UnsafeMemoryAccessible, R : Surge.UnsafeMemoryAccessible
+public struct UnsafeMutableMemory<Element> {
+  public var pointer: Swift.UnsafeMutablePointer<Element>
+  public var stride: Swift.Int
+  public var count: Swift.Int
+  public init(pointer: Swift.UnsafeMutablePointer<Element>, stride: Swift.Int = 1, count: Swift.Int)
+  public func makeIterator() -> Surge.UnsafeMutableMemoryIterator<Element>
+}
+public struct UnsafeMutableMemoryIterator<Element> : Swift.IteratorProtocol {
+  public init(_ base: Surge.UnsafeMutableMemory<Element>)
+  public mutating func next() -> Element?
+}
+public protocol UnsafeMutableMemoryAccessible : Surge.UnsafeMemoryAccessible {
+  mutating func withUnsafeMutableMemory<Result>(_ body: (Surge.UnsafeMutableMemory<Self.Element>) throws -> Result) rethrows -> Result
+}
+public func withUnsafeMutableMemory<L, Result>(_ lhs: inout L, _ body: (Surge.UnsafeMutableMemory<L.Element>) throws -> Result) rethrows -> Result where L : Surge.UnsafeMutableMemoryAccessible
+public func withUnsafeMutableMemory<L, R, Result>(_ lhs: inout L, _ rhs: inout R, _ body: (Surge.UnsafeMutableMemory<L.Element>, Surge.UnsafeMutableMemory<R.Element>) throws -> Result) rethrows -> Result where L : Surge.UnsafeMutableMemoryAccessible, R : Surge.UnsafeMutableMemoryAccessible
+public func withUnsafeMutableMemory<L, R, Z, Result>(_ lhs: inout L, _ rhs: inout R, _ z: inout Z, _ body: (Surge.UnsafeMutableMemory<L.Element>, Surge.UnsafeMutableMemory<R.Element>, Surge.UnsafeMutableMemory<Z.Element>) throws -> Result) rethrows -> Result where L : Surge.UnsafeMutableMemoryAccessible, R : Surge.UnsafeMutableMemoryAccessible, Z : Surge.UnsafeMutableMemoryAccessible
+extension Surge.MatrixAxies : Swift.Equatable {}
+extension Surge.MatrixAxies : Swift.Hashable {}
+extension Surge.Matrix.Shape : Swift.Hashable {}
+extension Surge.EigenDecompositionError : Swift.Equatable {}
+extension Surge.EigenDecompositionError : Swift.Hashable {}
