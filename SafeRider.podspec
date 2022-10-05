@@ -24,4 +24,6 @@ Pod::Spec.new do |s|
     s.dependency 'Surge', '2.3.2'
     s.dependency 'SwiftyBeaver', '1.9.5'
     s.dependency 'Swinject', '2.8.2'
+
+    s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64' }
 end
