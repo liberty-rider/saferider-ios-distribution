@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "SafeRider"
-    s.version      = "0.6.2"
+    s.version      = "0.6.3"
     s.summary      = "Liberty Rider Protection SDK binary"
     s.description  = <<-DESC
     Falls detection in motorcycle or bike rides and automatic call for help if necessary
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
     s.dependency 'BigInt', '5.2.0'
     s.dependency 'CombineExt', '1.8.0'
     s.dependency 'CryptoSwift', '1.6.0'
-    s.dependency 'GzipSwift', '5.2.0'
+    #s.dependency 'GzipSwift', '5.2.0'
     s.dependency 'Surge', '2.3.2'
     s.dependency 'SwiftyBeaver', '1.9.5'
     s.dependency 'Swinject', '2.8.2'
