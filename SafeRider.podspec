@@ -1,20 +1,17 @@
 Pod::Spec.new do |s|
     s.name         = "SafeRider"
-    s.version      = "0.6.1"
+    s.version      = "0.6.2"
     s.summary      = "Liberty Rider Protection SDK binary"
     s.description  = <<-DESC
     Falls detection in motorcycle or bike rides and automatic call for help if necessary
     DESC
     s.homepage     = "https://liberty-rider.com/"
-    s.license = { 
-        :type => 'Commercial', 
-        :text => 'Copyright 2022 Liberty Rider'
-    }
+    s.license = { :type => 'Commercial', :text => 'Copyright 2022 Liberty Rider' }
     s.authors      = { "Liberty Rider" => "contact@liberty-rider.com" }
     #s.source       = { :git => "https://github.com/liberty-rider/saferider-ios-distribution.git", :tag => "#{s.version}" }
     s.source       = { :http => "https://github.com/liberty-rider/saferider-ios-distribution/releases/download/#{s.version}/#{s.name}.zip" }
 
-    s.vendored_frameworks = "SafeRider.zip"
+    s.vendored_frameworks = "#{s.name}.xcframework"
     s.platform = :ios
     s.swift_version = "5.3"
     s.ios.deployment_target = '13.0'

@@ -3,9 +3,9 @@
 
 import PackageDescription
 
-let version = "0.6.4"
+let version = "0.6.2"
 let moduleName = "SafeRider"
-let checksum = "d036ec324dbeff1e91a8115957310af69c5b9db3d9ec93fa191277d2bba652f3"
+let checksum = "07c67af5662f25af5386956bc06b72f53d9c3460fa8d8096f5b02a0d8747e310"
 
 let package = Package(
     name: moduleName,
