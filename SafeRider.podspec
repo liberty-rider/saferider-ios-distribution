@@ -17,13 +17,12 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '13.0'
     s.cocoapods_version = '>= 1.4.0'
 
-    s.dependency 'BigInt', '5.2.0'
-    s.dependency 'CombineExt', '1.8.0'
-    s.dependency 'CryptoSwift', '1.6.0'
-    s.dependency 'DataCompression', '3.7.0'
-    s.dependency 'Surge', '2.3.2'
-    s.dependency 'SwiftyBeaver', '1.9.5'
-    s.dependency 'Swinject', '2.8.2'
+    s.dependency 'BigInt', '~> 5.2.0'
+    s.dependency 'CombineExt', '~> 1.8.0'
+    s.dependency 'CryptoSwift', '~>  1.6.0'
+    s.dependency 'DataCompression', '~> 3.7.0'
+    s.dependency 'Surge', '~> 2.3.2'
+    s.dependency 'Swinject', '~> 2.8.2'
 
     s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64' }
 end
