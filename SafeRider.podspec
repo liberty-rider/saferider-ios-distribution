@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
     s.license = { :type => 'Commercial', :text => 'Copyright 2022 Liberty Rider' }
     s.authors      = { "Liberty Rider" => "contact@liberty-rider.com" }
     #s.source       = { :git => "https://github.com/liberty-rider/saferider-ios-distribution.git", :tag => "#{s.version}" }
-    s.source       = { :http => "https://github.com/liberty-rider/saferider-ios-distribution/releases/download/#{s.version}/#{s.name}.zip" }
+    s.source       = { :http => "https://github.com/liberty-rider/saferider-ios-distribution/releases/download/#{s.version}/#{s.name}.xcframework.zip" }
 
     s.vendored_frameworks = "#{s.name}.xcframework"
     s.platform = :ios
