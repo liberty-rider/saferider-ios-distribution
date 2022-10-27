@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
     s.dependency 'BigInt', '~> 5.2.0'
     s.dependency 'CombineExt', '~> 1.8.0'
-    s.dependency 'CryptoSwift', '~>  1.6.0'
+    s.dependency 'CryptoSwift', '~> 1.6.0'
     s.dependency 'DataCompression', '~> 3.7.0'
     s.dependency 'Surge', '~> 2.3.2'
     s.dependency 'Swinject', '~> 2.8.2'
