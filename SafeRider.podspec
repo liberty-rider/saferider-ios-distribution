@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     #s.source       = { :git => "https://github.com/liberty-rider/saferider-ios-distribution.git", :tag => "#{s.version}" }
     s.source       = { :http => "https://github.com/liberty-rider/saferider-ios-distribution/releases/download/#{s.version}/#{s.name}.xcframework.zip" }
 
-    s.vendored_frameworks = "#{s.name}.xcframework"
+    s.vendored_frameworks = "#{s.name}.framework"
     s.platform = :ios
     s.swift_version = "5.3"
     s.ios.deployment_target = '13.0'
