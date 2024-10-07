@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "SafeRider"
-    s.version      = "1.1.1"
+    s.version      = "1.2.1"
     s.summary      = "Liberty Rider Protection SDK binary"
     s.description  = <<-DESC
     Falls detection in motorcycle or bike rides and automatic call for help if necessary
@@ -17,9 +17,9 @@ Pod::Spec.new do |s|
     s.cocoapods_version = '>= 1.4.0'
 
     s.dependency 'CombineExt', '1.8.0'
-    s.dependency 'CryptoSwift', '1.8.2'
+    s.dependency 'CryptoSwift', '1.8.3'
     s.dependency 'DataCompression', '3.8.0'
-    s.dependency 'DeviceKit', '5.4.0'
+    s.dependency 'DeviceKit', '5.5.0'
     s.dependency 'Swinject', '2.9.1'
 
     s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64' }
