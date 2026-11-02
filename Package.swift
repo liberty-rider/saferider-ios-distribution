@@ -18,16 +18,16 @@ let package = Package(
     platforms: [.iOS("16.5")],
     products: [
         .library(
-            name: "SafeRider", 
+            name: "SafeRider",
             targets: [
-                "CombineExt", 
-                "CryptoSwift", 
-                "CryptoSwiftResources", 
-                "DataCompression", 
-                "DeviceKit", 
-                "onnxruntime", 
-                "OnnxRuntimeBindings", 
-                "SafeRider", 
+                "CombineExt",
+                "CryptoSwift",
+                "CryptoSwiftResources",
+                "DataCompression",
+                "DeviceKit",
+                "onnxruntime",
+                "OnnxRuntimeBindings",
+                "SafeRider",
                 "Swinject"
             ]
         )
