@@ -1,6 +1,6 @@
 // swift-tools-version: 6.2
 //
-//  SafeRider iOS SDK 1.5.1
+//  SafeRider iOS SDK
 //  Copyright © 2026 Liberty Rider. All rights reserved.
 //
 //  Commercial license.
