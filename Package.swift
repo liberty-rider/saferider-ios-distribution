@@ -33,14 +33,14 @@ let package = Package(
         )
     ],
     targets: [
-        .binaryTarget(name: "CombineExt", url: "\(release)/CombineExt.xcframework.zip", checksum: "6e5689e7872b4c6d7d9b81e5f3b627ec6fcdd29e12a17336af4b1ae37c4004b4"),
-        .binaryTarget(name: "CryptoSwift", url: "\(release)/CryptoSwift.xcframework.zip", checksum: "89207e7ad608ee54377afb142265c6d85d839c16d0c3fa0326b3af7d9f10ac9c"),
-        .binaryTarget(name: "CryptoSwiftResources", url: "\(release)/CryptoSwiftResources.xcframework.zip", checksum: "70116ad82165726f2d6a300a0ae3ed1d5d9953f13eb3184524df59c2d4dc42b0"),
-        .binaryTarget(name: "DataCompression", url: "\(release)/DataCompression.xcframework.zip", checksum: "2cecee17b136a4748c1854da41f65c750f15eb50d958ed5f918ef1fabb9fa5ab"),
-        .binaryTarget(name: "DeviceKit", url: "\(release)/DeviceKit.xcframework.zip", checksum: "f9ac848e5354f6aba37cc5d1720f40fb984e02a5598dc9502179c8699425d15f"),
-        .binaryTarget(name: "onnxruntime", url: "\(release)/onnxruntime.xcframework.zip", checksum: "391772c9c6be6d361e05c20eb7603958d872bee20be47789b0740741628e30bb"),
-        .binaryTarget(name: "OnnxRuntimeBindings", url: "\(release)/OnnxRuntimeBindings.xcframework.zip", checksum: "e3dd3bde85a592ba4dffcb0cbb72d363c5cb9919b3f366573c523170f45629e9"),
-        .binaryTarget(name: "SafeRider", url: "\(release)/SafeRider.xcframework.zip", checksum: "61911522e05a847a7f1e6190fd5378f2db7a882e1d313aeffe9ff5eb9426314b"),
-        .binaryTarget(name: "Swinject", url: "\(release)/Swinject.xcframework.zip", checksum: "3fbb9625e4c231917dcec93383f11a9c0c114bb19b12353e8cf2085106d5ad5d")
+        .binaryTarget(name: "CombineExt", url: "\(release)/CombineExt.xcframework.zip", checksum: "6a0c9e8148945fbce0ce38c7e1dda79b9d53a44e18837832cae1b1267e02f7c6"),
+        .binaryTarget(name: "CryptoSwift", url: "\(release)/CryptoSwift.xcframework.zip", checksum: "8c15d653b698ddf929d1eb91f1be541d1e535b57fea8386671f884efe45cdc90"),
+        .binaryTarget(name: "CryptoSwiftResources", url: "\(release)/CryptoSwiftResources.xcframework.zip", checksum: "a6c7f25bc998737f5a9b116c391d6abadf403bddad6eef1f217d20fe8b8214a5"),
+        .binaryTarget(name: "DataCompression", url: "\(release)/DataCompression.xcframework.zip", checksum: "0c2019886784928ae85119b9113c474fe8e0cd11e2a86127226fd6626a2cb5fb"),
+        .binaryTarget(name: "DeviceKit", url: "\(release)/DeviceKit.xcframework.zip", checksum: "678f71d4b586ff68813792574a1f95d410eb4275afc4fdf2efd22eb839e90c0d"),
+        .binaryTarget(name: "onnxruntime", url: "\(release)/onnxruntime.xcframework.zip", checksum: "f1ee3cb31b19310f99b8cc099894c71386eb44bca0733ea81532e758e10dc0a0"),
+        .binaryTarget(name: "OnnxRuntimeBindings", url: "\(release)/OnnxRuntimeBindings.xcframework.zip", checksum: "b17365a8ece1bdcc2185c766047f6758d331884a448a47c0956ab359569e90a4"),
+        .binaryTarget(name: "SafeRider", url: "\(release)/SafeRider.xcframework.zip", checksum: "e93cb9de6cad1ca4a682e016343dbd682ae13da4384474149c5fc845e03f934b"),
+        .binaryTarget(name: "Swinject", url: "\(release)/Swinject.xcframework.zip", checksum: "6d7824030d09f5e541a11c7b13b952d54a8c4350458bde30471f339cba00f48b")
     ]
 )
